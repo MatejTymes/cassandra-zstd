@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.cassandra', name: 'cassandra-all', version: '3.0.0'
+    compile group: 'com.github.luben', name: 'zstd-jni', version: '1.1.1'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
