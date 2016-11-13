@@ -62,5 +62,5 @@ You can choose to omit the options and the defaults will be used:
 ```
 or you can define your own value:
 ```Sql
-... WITH compression = { 'sstable_compression': 'org.apache.cassandra.io.compress.ZstdCompressor',  'compression_level' = '16'}
+... WITH compression = { 'sstable_compression': 'org.apache.cassandra.io.compress.ZstdCompressor',  'compression_level': '16'}
 ```
