@@ -10,6 +10,7 @@ It is implemented in C library, so to make it usable in Java this project is use
 ## Installation
 
 You can build the project yourself or access it via Gradle:
+
 `compile 'com.github.matejtymes:cassandra-zstd:0.1.0'`
 
 Maven:
