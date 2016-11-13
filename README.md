@@ -25,7 +25,7 @@ Maven:
 
 or your other preferred dependency manager.
 
-Then you have to copy these jars into the cassandra folder
+Then you have to copy the final jar and its zstd-jni dependency into the cassandra folder
 
 ```{r, engine='bash'}
 cp cassandra-zstd-{version}.jar {cassandra_home}/lib
@@ -34,7 +34,7 @@ cp zstd-jni-{version}.jar {cassandra_home}/lib
 
 ## Configuration
 
-To create a new table with this configuration enabled you have to add these settings to it:
+To create a new table with Zstandard compression enabled you have to add this setting to it:
  
 ```Sql
 CREATE TABLE KEYSPACE_NAME.TABLE_NAME (
