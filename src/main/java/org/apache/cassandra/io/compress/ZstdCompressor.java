@@ -58,6 +58,7 @@ public class ZstdCompressor implements ICompressor {
                 input.limit() - input.position(),
                 level);
         output.position((int) size);
+        input.position(input.limit());
     }
 
     @Override
@@ -71,6 +72,7 @@ public class ZstdCompressor implements ICompressor {
                 input.limit() - input.position()
         );
         output.position(output.limit());
+        input.position(input.limit());
     }
 
     @Override
