@@ -50,6 +50,9 @@ public class ZstdCompressorTest {
         String decompressedText = new String(decompressedBytes);
 
         assertThat(decompressedText, equalTo(originalText));
+
+        assertThat(compressionInput.position(), equalTo(compressionInput.limit()));
+        assertThat(decompressionInput.position(), equalTo(decompressionInput.limit()));
     }
 
     @Theory
