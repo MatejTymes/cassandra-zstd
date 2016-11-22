@@ -11,7 +11,7 @@ It is implemented in C library, so to make it usable in Java this project is use
 
 You can build the project yourself or access it via Gradle:
 
-`compile 'com.github.matejtymes:cassandra-zstd:0.1.0'`
+`compile 'com.github.matejtymes:cassandra-zstd:0.2.0'`
 
 Maven:
 
@@ -19,7 +19,7 @@ Maven:
 <dependency>
     <groupId>com.github.matejtymes</groupId>
     <artifactId>cassandra-zstd</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
